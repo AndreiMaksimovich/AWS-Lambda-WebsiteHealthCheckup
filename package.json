@@ -1,0 +1,16 @@
+{
+  "name": "aws-lambda-websitehealthcheckup",
+  "version": "1.0.0",
+  "description": "Lambda function that verifies the health status of the website: the number of days until the end of domain registration, the status of the ssl certificate, the correctness of the url response.",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "author": "Andrei Maksimovich",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-sns": "^3.484.0",
+    "@slack/webhook": "^7.0.1",
+    "whois": "^2.14.0"
+  }
+}
